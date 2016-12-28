@@ -12,13 +12,14 @@
 using namespace std;
 const double e=2.71828;
 int main() {
+	//UTF-8
 	int a, b, x;
 	double z;
-	 cout<<"Ââåäèòå ïàðàìåòð a: ";
+	 cout<<"Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€ a: ";
 	 cin>>a;
-	 cout<<"Ââåäèòå ïàðàìåòð b: ";
+	 cout<<"Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€ b: ";
 	 cin>>b;
-	 cout<<"Ââåäèòå àðãóìåíò x: ";
+	 cout<<"Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð°Ñ€Ð³ÑƒÐ¼ÐµÐ½Ñ‚ x: ";
 	 cin>>x;
 	 if (x <= a){
 		 z = pow((1 + cosh(x) + tanh(pow(x, 2))), sin(x) + cos(x));
@@ -28,8 +29,8 @@ int main() {
 		 z = pow(abs(asin(x)+ pow(e, x)), 1 + 5*pow(sin(x), 2)) + pow(abs(1 - x), 1/2);
 	 }
 	 cout.setf(ios::scientific, ios::floatfield);
-	 cout<<"Çíà÷åíèå ôóíêöèè z = f(x) = "<<z<<endl;
-	 cout<<"Íàæìèòå ëþáóþ êëàâèøó...";
+	 cout<<"Ð—Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ñ„ÑƒÐ½ÐºÑ†Ð¸Ð¸ z = f(x) = "<<z<<endl;
+	 cout<<"ÐÐ°Ð¶Ð¼Ð¸Ñ‚Ðµ Ð»ÑŽÐ±ÑƒÑŽ ÐºÐ»Ð°Ð²Ð¸ÑˆÑƒ...";
 	 return 0;
 }
 
